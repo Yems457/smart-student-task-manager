@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Task Manager</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <h1>Task Manager</h1>
+
+        <!-- Add Task Input Form -->
+        <div class="input-group">
+            <input type="text" id="task-input" placeholder="What needs to be done?" autocomplete="off">
+            <button class="add-btn" id="add-button">Add Task</button>
+        </div>
+
+        <!-- Task Statistics Panel -->
+        <div class="stats-container">
+            <div class="stat-card">
+                <h3>Total</h3>
+                <p id="stat-total">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Completed</h3>
+                <p id="stat-completed">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Pending</h3>
+                <p id="stat-pending">0</p>
+            </div>
+        </div>
+
+        <!-- Dynamic Task List -->
+        <ul class="task-list" id="task-list"></ul>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
